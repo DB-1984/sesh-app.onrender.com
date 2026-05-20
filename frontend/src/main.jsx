@@ -46,7 +46,8 @@ const router = createBrowserRouter(
           {/* 2. Sesh View: Sibling to Dashboard, but still under Header */}
           {/* Use :id to match useParams() call */}
           <Route path="sesh/:id" element={<ViewSesh />}>
-            <Route path="exercise/:exerciseId/edit" element={<></>} /> {/* adds exerciseId to params only */}
+            <Route path="exercise/:exerciseId/edit" element={<></>} />{" "}
+            {/* adds exerciseId to params only */}
           </Route>
           <Route index element={<Navigate to="dashboard" replace />} />
         </Route>

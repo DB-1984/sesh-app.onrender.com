@@ -40,7 +40,7 @@ export function ForgotPasswordForm() {
       <button
         type="submit"
         disabled={isLoading}
-        className="w-full mt-3 text-sm shadow-sm flex items-center justify-center gap-3 h-11 border border-zinc-200 bg-black text-white transition-all font-medium rounded-lg"
+        className="w-full mt-3 text-sm shadow-sm flex items-center justify-center gap-3 h-11 border border-zinc-200 bg-black text-white transition-all font-medium  -lg"
       >
         {isLoading ? "Sending..." : "Send reset link"}
       </button>

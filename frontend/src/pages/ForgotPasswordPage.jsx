@@ -8,7 +8,7 @@ export default function ForgotPasswordPage() {
           Sesh
         </span>
 
-        <div className="w-full bg-background p-6 shadow-lg rounded-lg">
+        <div className="w-full bg-background p-6 shadow-lg  -lg">
           <ForgotPasswordForm />
         </div>
       </div>

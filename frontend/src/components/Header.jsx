@@ -120,7 +120,7 @@ export default function Header() {
         ref={headerRef}
         className="fixed top-0 left-0 w-full z-50 bg-white/90 dark:bg-gray-900/70 backdrop-blur-sm shadow-sm border-b"
       >
-        <div className="max-w-8xl mx-auto px-6 py-4">
+        <div className="max-w-8xl bg-card/70 mx-auto px-6 py-4">
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-3">
             {/* Left */}
             <div className="flex items-center justify-between md:justify-start gap-4">
@@ -142,7 +142,7 @@ export default function Header() {
 
             {/* Right */}
             <div className="flex items-center justify-between md:justify-end gap-3 w-full md:w-auto">
-              <div className="flex items-center gap-2 bg-gray-100/50 dark:bg-gray-800/50 px-2 py-1 rounded-md">
+              <div className="flex items-center gap-2 bg-gray-100/50 dark:bg-gray-800/50 px-2 py-1  -md">
                 <Label className="text-sm font-normal">Theme</Label>
                 <Switch
                   checked={mode === "dark"}
@@ -198,7 +198,8 @@ export default function Header() {
                               seshDaySet.has(format(date, "yyyy-MM-dd")),
                           }}
                           modifiersClassNames={{
-                            hasWorkout: "underline",
+                            hasWorkout:
+                              "bg-slate-900 text-white dark:bg-white dark:text-black",
                           }}
                         />
                       </PopoverContent>

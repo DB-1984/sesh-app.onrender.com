@@ -73,9 +73,9 @@ const Dashboard = () => {
     : "Showing your 5 most recent sessions.";
 
   return (
-    <div className="grid min-h-[calc(100vh-64px)] max-w-7xl mx-auto lg:grid-cols-[420px_1fr] bg-transparent">
+    <div className="grid min-h-[calc(100vh-64px)] max-w-6xl mx-auto lg:grid-cols-[420px_1fr] bg-transparent">
       {/* LEFT PANEL */}
-      <div className="border-r bg-card/50">
+      <div className="bg-white/90">
         <div className="h-[calc(100vh-10px)] overflow-y-auto">
           <div className="mx-auto w-full max-w-full p-6 md:p-10">
             <Outlet context={{ profile, profileLoading }} />
@@ -86,7 +86,7 @@ const Dashboard = () => {
       {/* RIGHT PANEL */}
       <div className="relative flex flex-col">
         {/* Sticky Header */}
-        <div className="sticky top-0 z-10 border-b bg-card/50">
+        <div className="sticky top-0 z-10 bg-white/90">
           <div className="flex items-center justify-between gap-4 p-6 md:p-8">
             <div className="min-w-0">
               <div className="flex items-center gap-2 text-sm text-muted-foreground">

@@ -66,10 +66,10 @@ export function SignupForm() {
 
   return (
     <section className="flex items-center justify-center">
-      <div className="w-full max-w-md rounded-xl bg-card p-6">
+      <div className="w-full max-w-md  -xl bg-card p-6">
         <div className="flex flex-col gap-2 pb-4">
           <div className="flex items-center gap-3">
-            <span className="logo-text flex h-10 w-10 items-center justify-center rounded-full bg-zinc-900 text-white text-2xl font-bold">
+            <span className="logo-text flex h-10 w-10 items-center justify-center  -full bg-zinc-900 text-white text-2xl font-bold">
               S
             </span>
             <h1 className="text-2xl logo-text tracking-tight">Sign Up</h1>
@@ -199,7 +199,7 @@ export function SignupForm() {
         <button
           onClick={handleGoogleLogin}
           variant="outline"
-          className="w-full mt-3 text-sm shadow-sm flex items-center justify-center gap-3 h-11 border border-zinc-200 bg-white hover:bg-zinc-50 transition-all font-medium rounded-lg text-zinc-700"
+          className="w-full mt-3 text-sm shadow-sm flex items-center justify-center gap-3 h-11 border border-zinc-200 bg-white/90 hover:bg-zinc-50 transition-all font-medium  -lg text-zinc-700"
         >
           <GoogleIcon />
           Continue with Google

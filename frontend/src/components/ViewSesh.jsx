@@ -71,7 +71,7 @@ export default function ViewSesh() {
   }
 
   if (!currentSesh)
-    return <div className="p-10 text-center">Sesh not found.</div>;
+    return <div className="p-10 font-bold text-center">Sesh not found...</div>;
 
   const handleDeleteExercise = async (exercise) => {
     try {
@@ -136,7 +136,7 @@ export default function ViewSesh() {
                           originalTitleRef.current = titleDraft;
                         }}
                         onBlur={handleRename}
-                        className="w-full bg-transparent border-none p-0 text-3xl font-black tracking-tighter focus:outline-none focus:ring-0"
+                        className="w-full bg-transparent border-none p-0 text-lg font-black tracking-tighter focus:outline-none focus:ring-0"
                       />
 
                       <Button
@@ -245,7 +245,7 @@ export default function ViewSesh() {
                       >
                         <div className="flex items-center justify-between gap-4 p-4 overflow-hidden">
                           <div className="flex items-center gap-4 flex-1 min-w-0 w-0 overflow-hidden">
-                            <div className="flex flex-col items-center justify-center h-12 w-12 shrink-0 rounded-lg bg-muted border">
+                            <div className="flex flex-col items-center justify-center h-12 w-12 shrink-0 bg-muted border">
                               <span className="text-[10px] uppercase tracking-wider text-muted-foreground leading-none">
                                 Sets
                               </span>

@@ -18,7 +18,7 @@ export const SeshCard = ({ sesh, onDelete }) => {
           className="flex flex-1 items-center min-w-0 pl-2 gap-4 no-underline"
         >
           {/* Date Block — now darker */}
-          <div className="flex flex-col items-center justify-center h-14 w-14 rounded-lg bg-foreground text-background shadow-sm transition-all group-hover:scale-105">
+          <div className="flex flex-col items-center justify-center h-14 w-14  -lg bg-foreground text-background shadow-sm transition-all group-hover:scale-105">
             <span className="text-[10px] uppercase tracking-wider opacity-80">
               {format(date, "MMM")}
             </span>

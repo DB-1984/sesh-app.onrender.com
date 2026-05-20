@@ -18,8 +18,8 @@ export function StatCard({
   return (
     <Card
       className={cn(
-        "bg-white/70 dark:bg-gray-800/80 backdrop-blur-md",
-        "border-white/20 dark:border-gray-700/50 shadow-lg rounded-md",
+        "bg-white/90/70 dark:bg-gray-800/80 backdrop-blur-md",
+        "border-white/20 dark:border-gray-700/50 shadow-lg  -md",
         "flex flex-col h-full transition-all duration-200",
         className
       )}

@@ -176,7 +176,7 @@ export default function ProfilePage() {
             </Label>
             <select
               {...register("goal")}
-              className="flex h-12 w-full rounded-md bg-zinc-50 dark:bg-zinc-900 px-3 py-1 font-bold text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black dark:focus-visible:ring-white disabled:cursor-not-allowed disabled:opacity-50 appearance-none"
+              className="flex h-12 w-full  -md bg-zinc-50 dark:bg-zinc-900 px-3 py-1 font-bold text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black dark:focus-visible:ring-white disabled:cursor-not-allowed disabled:opacity-50 appearance-none"
             >
               <option value="Strength">Strength</option>
               <option value="Hypertrophy">Hypertrophy</option>
@@ -192,7 +192,7 @@ export default function ProfilePage() {
             <textarea
               {...register("targets")}
               placeholder="e.g. 100kg Bench, 5km under 20 mins..."
-              className="flex min-h-[100px] w-full rounded-md bg-zinc-50 dark:bg-zinc-900 px-3 py-3 font-medium text-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black dark:focus-visible:ring-white border-none"
+              className="flex min-h-[100px] w-full  -md bg-zinc-50 dark:bg-zinc-900 px-3 py-3 font-medium text-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-black dark:focus-visible:ring-white border-none"
             />
           </div>
         </section>
@@ -202,7 +202,7 @@ export default function ProfilePage() {
           <Button
             type="submit"
             disabled={isUpdating}
-            className="px-8 py-6 rounded-md bg-black dark:bg-white text-white dark:text-black font-bold text-sm shadow-xl hover:scale-[1.01] transition-all disabled:opacity-50"
+            className="px-8 py-6  -md bg-black dark:bg-white/90 text-white dark:text-black font-bold text-sm shadow-xl hover:scale-[1.01] transition-all disabled:opacity-50"
           >
             {isUpdating ? <Loader2 className="animate-spin" /> : "Update"}
           </Button>

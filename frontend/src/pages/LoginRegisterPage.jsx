@@ -16,7 +16,7 @@ export default function LoginRegisterPage({ mode = "login" }) {
         {/* Desktop logo (lg and up only) */}
         <div className="hidden lg:flex justify-center md:justify-start">
           <a href="/" className="flex items-center font-medium">
-            <span className="text-4xl font-bold logo-text text-foreground">
+            <span className="text-4xl font-bold logo-text text-white">
               Sesh
             </span>
           </a>
@@ -29,10 +29,10 @@ export default function LoginRegisterPage({ mode = "login" }) {
               Sesh
             </span>
 
-            <div className="w-full max-w-xs bg-background p-4 shadow-lg rounded-lg">
+            <div className="w-full max-w-xs bg-background p-4 shadow-lg  -lg">
               <FormComponent />
               <Link to="/forgot-password" className="no-underline">
-                <p className="text-center pb-4 hover:underline text-sm text-muted-foreground">
+                <p className="text-center pb-4 hover:underline text-xs text-muted-foreground">
                   Forgotten password?
                 </p>
               </Link>

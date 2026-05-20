@@ -51,7 +51,7 @@ export function LoginForm() {
 
   return (
     <section className="flex items-center justify-center">
-      <div className="w-full max-w-md rounded-xl bg-card p-6">
+      <div className="w-full max-w-md  -xl bg-card p-6">
         <form
           onSubmit={handleSubmit(submitHandler)}
           className="flex flex-col gap-5"
@@ -59,7 +59,7 @@ export function LoginForm() {
           {/* Logo + Title + Tagline */}
           <div className="flex flex-col gap-2">
             <div className="flex items-center gap-3">
-              <span className="logo-text flex h-10 w-10 items-center justify-center rounded-full bg-zinc-900 text-white text-2xl font-bold">
+              <span className="logo-text flex h-10 w-10 items-center justify-center  -full bg-zinc-900 text-white text-2xl font-bold">
                 S
               </span>
               <h1 className="text-2xl logo-text tracking-tight">Log in</h1>
@@ -121,7 +121,7 @@ export function LoginForm() {
           >
             {isLoading ? (
               <span className="flex items-center justify-center gap-2">
-                <span className="h-4 w-4 animate-spin rounded-full border-2 border-background border-t-transparent" />
+                <span className="h-4 w-4 animate-spin  -full border-2 border-background border-t-transparent" />
                 Signing you in…
               </span>
             ) : (
@@ -145,7 +145,7 @@ export function LoginForm() {
         <button
           onClick={handleGoogleLogin}
           variant="outline"
-          className="w-full mt-3 text-sm shadow-sm flex items-center justify-center gap-3 h-11 border border-zinc-200 bg-white hover:bg-zinc-50 transition-all font-medium rounded-lg text-zinc-700"
+          className="w-full mt-3 text-sm shadow-sm flex items-center justify-center gap-3 h-11 border border-zinc-200 bg-white/90 hover:bg-zinc-50 transition-all font-medium  -lg text-zinc-700"
         >
           <GoogleIcon />
           Continue with Google

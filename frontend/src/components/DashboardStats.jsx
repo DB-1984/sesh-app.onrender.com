@@ -135,11 +135,11 @@ export default function DashboardStats() {
           <Button
             asChild
             variant="ghost"
-            className="group w-full justify-between rounded-xl px-4 py-6 hover:bg-muted/70"
+            className="group w-full justify-between  -xl px-4 py-6 hover:bg-muted/70"
           >
             <Link to="profile" className="no-underline">
               <div className="flex items-center gap-3">
-                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-background/70 border">
+                <div className="flex h-10 w-10 items-center justify-center  -lg bg-background/70 border">
                   <UserPen className="h-5 w-5 text-muted-foreground group-hover:text-foreground" />
                 </div>
 
@@ -161,10 +161,10 @@ export default function DashboardStats() {
           <Button
             variant="ghost"
             onClick={handleLogout}
-            className="group w-full justify-between rounded-xl px-4 py-6 hover:bg-destructive/10"
+            className="group w-full justify-between  -xl px-4 py-6 hover:bg-destructive/10"
           >
             <div className="flex items-center gap-3">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-background/70 border">
+              <div className="flex h-10 w-10 items-center justify-center  -lg bg-background/70 border">
                 <LogOut className="h-5 w-5 text-destructive" />
               </div>
 

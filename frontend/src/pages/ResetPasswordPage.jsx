@@ -45,7 +45,7 @@ export default function ResetPasswordPage() {
           Sesh
         </span>
 
-        <div className="w-full bg-background p-6 shadow-lg rounded-lg">
+        <div className="w-full bg-background p-6 shadow-lg  -lg">
           <form
             onSubmit={handleSubmit}
             className="flex space-y-4 flex-col gap-4"
@@ -77,7 +77,7 @@ export default function ResetPasswordPage() {
             <button
               type="submit"
               disabled={isLoading || !token}
-              className="w-full mt-3 text-sm shadow-sm flex items-center justify-center gap-3 h-11 border border-zinc-200 bg-black text-white transition-all font-medium rounded-lg"
+              className="w-full mt-3 text-sm shadow-sm flex items-center justify-center gap-3 h-11 border border-zinc-200 bg-black text-white transition-all font-medium  -lg"
             >
               {isLoading ? "Saving..." : "Reset password"}
             </button>

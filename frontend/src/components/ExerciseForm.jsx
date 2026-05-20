@@ -38,7 +38,7 @@ export function ExerciseForm({
           <Input
             {...form.register("exercise", { required: true })}
             placeholder="Exercise (e.g. Bench Press)"
-            className="bg-white dark:bg-zinc-900"
+            className="bg-white/90 dark:bg-zinc-900"
           />
 
           {/* Grid for numerical values to keep the form from getting too long */}
@@ -50,7 +50,7 @@ export function ExerciseForm({
               })}
               type="number"
               placeholder="Weight (kg)"
-              className="bg-white dark:bg-zinc-900"
+              className="bg-white/90 dark:bg-zinc-900"
             />
             <Input
               {...form.register("reps", {
@@ -59,7 +59,7 @@ export function ExerciseForm({
               })}
               type="number"
               placeholder="Reps"
-              className="bg-white dark:bg-zinc-900"
+              className="bg-white/90 dark:bg-zinc-900"
             />
           </div>
 
@@ -71,7 +71,7 @@ export function ExerciseForm({
               })}
               type="number"
               placeholder="Sets"
-              className="bg-white dark:bg-zinc-900"
+              className="bg-white/90 dark:bg-zinc-900"
             />
             <Input
               {...form.register("rest", {
@@ -80,7 +80,7 @@ export function ExerciseForm({
               })}
               type="number"
               placeholder="Rest(s)"
-              className="bg-white dark:bg-zinc-900"
+              className="bg-white/90 dark:bg-zinc-900"
             />
           </div>
 
@@ -88,7 +88,7 @@ export function ExerciseForm({
             {...form.register("comments")}
             placeholder="Notes / Comments..."
             rows={3}
-            className="bg-white dark:bg-zinc-900"
+            className="bg-white/90 dark:bg-zinc-900"
           />
 
           {/* Action Group: Buttons are now inside the same vertical flow */}
